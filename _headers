@@ -1,0 +1,11 @@
+# Netlify headers file
+/*.js
+  Content-Type: application/javascript; charset=utf-8
+/*.mjs
+  Content-Type: application/javascript; charset=utf-8
+/*.tsx
+  Content-Type: application/javascript; charset=utf-8
+/*.ts
+  Content-Type: application/javascript; charset=utf-8
+/assets/*.js
+  Content-Type: application/javascript; charset=utf-8
