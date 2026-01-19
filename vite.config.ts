@@ -8,7 +8,9 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    middlewareMode: false,
+    fs: {
+      strict: false
+    }
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
@@ -16,7 +18,18 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  optimizeDeps: {
-    include: ['react', 'react-dom']
+  esbuild: {
+    loader: 'tsx',
+    include: /src\/.*\.[tj]sx?$/,
+    exclude: []
   },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+        '.ts': 'tsx',
+        '.tsx': 'tsx'
+      }
+    }
+  }
 }));
