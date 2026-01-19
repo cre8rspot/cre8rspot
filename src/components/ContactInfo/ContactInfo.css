@@ -1,0 +1,59 @@
+.contact-info {
+  padding-right: 2rem;
+}
+
+.contact-info-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-family: "Overlock", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contact-info-description {
+  color: hsl(var(--muted-foreground));
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 40px;
+}
+
+.contact-info-icon {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--primary));
+  flex-shrink: 0;
+}
+
+.contact-info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-label {
+  font-size: 18px;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 0.25rem;
+  font-family: "Overpass", sans-serif;
+}
+
+.contact-info-value {
+  font-size: 16px;
+  color: hsl(var(--foreground));
+  font-family: "Overpass", sans-serif;
+}

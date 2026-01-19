@@ -1,0 +1,28 @@
+.home-page {
+  min-height: 100vh;
+  background: hsl(var(--background));
+}
+
+.home-services {
+  padding: 4rem 0rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 40px;
+}
+
+@media (max-width: 1024px) {
+  .home-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-services-grid {
+    grid-template-columns: 1fr;
+  }
+}

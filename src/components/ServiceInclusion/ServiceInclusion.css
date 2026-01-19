@@ -1,0 +1,36 @@
+.service-inclusion {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-inclusion-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, hsl(var(--primary) / 0.2) 0%, hsl(var(--primary) / 0.1) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--primary));
+  flex-shrink: 0;
+}
+
+.service-inclusion-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-inclusion-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.25rem;
+}
+
+.service-inclusion-description {
+  font-size: 16px;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.5;
+}

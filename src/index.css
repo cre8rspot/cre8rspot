@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 270 91% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 270 91% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 270 91% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --purple-glow: 270 91% 65%;
+    --card-border: 0 0% 18%;
+    --text-gray: 0 0% 70%;
+    --gradient-purple-start: 270 91% 55%;
+    --gradient-purple-end: 280 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: "Overpass", sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground font-overpass;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+    font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .gradient-banner {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--background)) 0%,
+      hsl(270 91% 20% / 0.5) 50%,
+      hsl(var(--background)) 100%
+    );
+    border: 1px solid hsl(var(--border));
+  }
+
+  .card-gradient {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--card)) 0%,
+      hsl(0 0% 6%) 100%
+    );
+    border: 1px solid hsl(var(--card-border));
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-2 rounded-full font-medium transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply opacity-90 scale-105;
+  }
+
+  .btn-icon {
+    @apply w-8 h-8 rounded-full bg-primary flex items-center justify-center;
+  }
+
+  .input-field {
+    @apply bg-muted border border-border rounded-lg px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors;
+  }
+
+  .nav-link {
+    @apply text-muted-foreground hover:text-foreground transition-colors;
+  }
+
+  .nav-link-active {
+    @apply text-primary;
+  }
+
+  .section-label {
+    @apply text-primary text-sm font-medium tracking-wide;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold text-foreground mt-2;
+    font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .icon-box {
+    @apply w-12 h-12 rounded-xl border border-border flex items-center justify-center text-primary;
+  }
+
+  .service-sidebar-item {
+    @apply py-3 px-4 text-muted-foreground hover:text-foreground transition-colors border-l-2 border-transparent hover:border-primary cursor-pointer;
+  }
+
+  .service-sidebar-item-active {
+    @apply text-foreground border-l-2 border-primary bg-muted/50;
+  }
+
+  .footer-link {
+    @apply text-muted-foreground hover:text-foreground transition-colors;
+  }
+
+  .social-icon {
+    @apply w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary transition-colors;
+  }
+
+  .testimonial-card {
+    @apply card-gradient rounded-2xl p-6;
+  }
+
+  .star-rating {
+    @apply text-yellow-400;
+  }
+
+  .breadcrumb {
+    @apply flex items-center gap-2 text-sm;
+  }
+
+  .breadcrumb-item {
+    @apply text-muted-foreground;
+  }
+
+  .breadcrumb-item-active {
+    @apply text-primary;
+  }
+
+  .check-item {
+    @apply flex items-center gap-2 text-muted-foreground;
+  }
+
+  .stat-number {
+    @apply text-4xl font-bold text-primary;
+  }
+
+  .stat-label {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .carousel-dot {
+    @apply w-2 h-2 rounded-full bg-muted transition-colors;
+  }
+
+  .carousel-dot-active {
+    @apply bg-primary;
+  }
+}

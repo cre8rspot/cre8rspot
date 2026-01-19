@@ -1,0 +1,67 @@
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card-quote {
+  color: #6229d2;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.testimonial-card-text {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-family: "Overpass", sans-serif;
+}
+
+.testimonial-card-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-card-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f0f0f0;
+}
+
+.testimonial-card-info {
+  flex: 1;
+}
+
+.testimonial-card-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  font-family: "Overlock", sans-serif;
+}
+
+.testimonial-card-position {
+  font-size: 14px;
+  color: #666;
+  font-family: "Overpass", sans-serif;
+}

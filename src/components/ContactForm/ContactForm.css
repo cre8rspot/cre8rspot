@@ -1,0 +1,117 @@
+.contact-form-container {
+  background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(0 0% 6%) 100%);
+  border: 1px solid hsl(var(--card-border));
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.contact-form-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 1.5rem;
+      font-family: "Overlock", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form-input {
+  background: #2525256b;
+  border-bottom: 1px solid hsl(0deg 0% 36.72%);
+  border-radius: 0.5rem;
+  padding: 0.875rem 1rem;
+  color: hsl(var(--foreground));
+  font-size: 0.9rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: "Overpass", sans-serif;
+}
+
+.contact-form-input::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+.contact-form-input:focus {
+  border-color: hsl(var(--primary));
+}
+
+.contact-form-input.error {
+  border-color: hsl(var(--destructive));
+  background: hsl(var(--destructive) / 0.1);
+}
+
+.error-message {
+  color: hsl(var(--destructive));
+  font-size: 0.75rem;
+  font-family: "Overpass", sans-serif;
+  margin-top: 0.25rem;
+}
+
+.contact-form-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.contact-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.contact-form-btn {
+  background: linear-gradient(135deg, #732CFFCC 0%, #993FD3 50%, #E4657C 100%);
+  color: hsl(var(--primary-foreground));
+  padding: 0.8rem 2.25rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  font-family: "Overpass", sans-serif;
+}
+
+.contact-form-btn:hover {
+  opacity: 0.9;
+}
+
+.contact-form-btn-icon {
+     width: 3rem;
+    height: 3rem;
+  border-radius: 50%;
+ background: linear-gradient(135deg, #732CFFCC 0%, #993FD3 50%, #E4657C 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--primary-foreground));
+}
+
+@media (max-width: 480px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form-title {
+    font-size: 28px;
+  }
+}

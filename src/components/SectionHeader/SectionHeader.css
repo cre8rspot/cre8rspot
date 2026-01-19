@@ -1,0 +1,26 @@
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header-label {
+  color: hsl(var(--primary));
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.section-header-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  font-family: "Overlock", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .section-header-title {
+    font-size: 1.5rem;
+  }
+}
