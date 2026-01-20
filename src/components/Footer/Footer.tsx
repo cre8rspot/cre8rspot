@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="footer-brand">
             <div className="footer-brand-logo">
               <span className="footer-brand-logo-icon">
-                <img src='src/image/logo.png'/>
+                <img src='/images/logo.png'/>
               </span>
             </div>
             <p className="footer-brand-description">
@@ -70,13 +70,13 @@ const Footer = () => {
             </div>
             <div className="footer-social">
               <a href="#" className="footer-social-link" aria-label="Social link 1">
-                <img src='src/image/behance.png'/>
+                <img src='/images/behance.png'/>
               </a>
               <a href="#" className="footer-social-link" aria-label="Social link 2">
-                <img src='src/image/insta.png'/>
+                <img src='/images/insta.png'/>
               </a>
               <a href="#" className="footer-social-link" aria-label="Social link 3">
-                <img src='src/image/linkedin.png'/>
+                <img src='/images/linkedin.png'/>
               </a>
             </div>
           </div>

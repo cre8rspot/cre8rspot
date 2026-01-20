@@ -1,27 +1,23 @@
 import './AboutFeatures.css';
-import about1 from '../../image/about-1.png';
-import about2 from '../../image/about-2.png';
-import about3 from '../../image/about-3.png';
-import about4 from '../../image/about-4.png';
 
 const features = [
   {
-    iconImage: about1,
+    iconImage: '/images/about-1.png',
     title: 'Creative & Skilled Team',
     description: 'We turn ideas into clean, impactful designs.',
   },
   {
-    iconImage: about2,
+    iconImage: '/images/about-2.png',
     title: 'High Quality Digital Solutions',
     description: 'We deliver modern and effective digital outputs.',
   },
   {
-    iconImage: about3,
+    iconImage: '/images/about-3.png',
     title: 'Fast & Modern Website Development',
     description: 'We build quick, responsive, and sleek websites.',
   },
   {
-    iconImage: about4,
+    iconImage: '/images/about-4.png',
     title: 'Reliable & On-Time Delivery',
     description: 'We ensure smooth communication and timely work.',
   },
@@ -43,7 +39,7 @@ const AboutFeatures = () => {
             </div> */}
           {/* </div> */}
           <img
-            src="src/image/about_left_img.png"
+            src="/images/about_left_img.png"
             alt="Team working"
             className="about-features-image"
           />

@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-background: url("src/image/hero_bg.png")no-repeat;
+background: url("/images/hero_bg.png") no-repeat;
 background-size: cover;
   /* border: 1px solid hsl(var(--border)); */
   border-radius: 1rem;

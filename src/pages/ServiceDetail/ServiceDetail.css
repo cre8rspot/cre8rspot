@@ -84,7 +84,7 @@
   border-radius: 1rem;
   overflow: hidden;
   margin-bottom: 2rem;
-  background-image: url('../../image/service-details-hero-image.png');
+  background-image: url('/images/service-details-hero-image.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@
 
   .service-detail-hero {
     height: 300px;
-    background-image: url("../../image/service-details-hero-image2.png");
+    background-image: url("/images/service-details-hero-image2.png");
   }
 
   /* .service-detail-hero-image {

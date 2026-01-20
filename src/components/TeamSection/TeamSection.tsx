@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'Emily Kim',
     role: 'Founder',
-    image: 'src/image/team1.png',
+    image: '/images/team1.png',
     linkedin: '#',
     twitter: '#',
     instagram: '#',
@@ -13,7 +13,7 @@ const teamMembers = [
   {
     name: 'Michael Steward',
     role: 'Creative Director',
-    image: 'src/image/team2.png',
+    image: '/images/team2.png',
     linkedin: '#',
     twitter: '#',
     instagram: '#',
@@ -21,7 +21,7 @@ const teamMembers = [
   {
     name: 'Emma Rodriguez',
     role: 'Lead Developer',
-    image: 'src/image/team5.png',
+    image: '/images/team5.png',
     linkedin: '#',
     twitter: '#',
     instagram: '#',
@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: 'Julia Gimmel',
     role: 'UX Designer',
-    image: 'src/image/team3.png',
+    image: '/images/team3.png',
     linkedin: '#',
     twitter: '#',
     instagram: '#',
@@ -37,7 +37,7 @@ const teamMembers = [
   {
     name: 'Lisa Anderson',
     role: 'Marketing Manager',
-    image: 'src/image/team4.png',
+    image: '/images/team4.png',
     linkedin: '#',
     twitter: '#',
     instagram: '#',
@@ -107,15 +107,15 @@ const TeamSection = () => {
                 <div className="card-socials">
                   <a href={member.linkedin}>
                     {/* <i className="fab fa-linkedin-in"></i> */}
-                    <img src='src/image/linkedin.png' className="fab fa-linkedin-in" />
+                    <img src='/images/linkedin.png' className="fab fa-linkedin-in" />
                   </a>
                   <a href={member.twitter}>
                     {/* <i className="fab fa-twitter"></i> */}
-                    <img src='src/image/behance.png' className="fab fa-twitter"/>
+                    <img src='/images/behance.png' className="fab fa-twitter"/>
                   </a>
                   <a href={member.instagram}>
                     {/* <i className="fab fa-instagram"></i> */}
-                    <img src='src/image/insta.png' className="fab fa-instagram"/>
+                    <img src='/images/insta.png' className="fab fa-instagram"/>
                   </a>
                 </div>
               </div>

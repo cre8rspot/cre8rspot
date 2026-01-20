@@ -5,37 +5,37 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     text: 'Working with this team has been an absolute pleasure. Their attention to detail and creative vision exceeded all our expectations.',
-    image: 'src/image/team1.png',
+    image: '/images/team1.png',
     position: 'Marketing Director'
   },
   {
     name: 'Michael Chen',
     text: 'The level of professionalism and expertise they brought to our project was outstanding. Highly recommend their services.',
-    image: 'src/image/review2.png',
+    image: '/images/review2.png',
     position: 'CEO, TechCorp'
   },
   {
     name: 'Emily Rodriguez',
     text: 'From concept to execution, they delivered exactly what we needed. The results speak for themselves.',
-    image: 'src/image/review3.png',
+    image: '/images/review3.png',
     position: 'Creative Director'
   },
   {
     name: 'David Thompson',
     text: 'Their innovative approach and dedication to quality made all the difference in our project success.',
-    image: 'src/image/review1.png',
+    image: '/images/review1.png',
     position: 'Product Manager'
   },
   {
     name: 'Lisa Anderson',
     text: 'Exceptional work quality and timely delivery. They truly understand what clients need.',
-    image: 'src/image/review2.png',
+    image: '/images/review2.png',
     position: 'Brand Manager'
   },
   {
     name: 'James Wilson',
     text: 'The team\'s creativity and technical skills are unmatched. They brought our vision to life perfectly.',
-    image: 'src/image/review3.png',
+    image: '/images/review3.png',
     position: 'Founder'
   }
 ];
@@ -83,11 +83,11 @@ const TestimonialSection = () => {
 
           <div className="testimonial__stats-bottom">
             <div className="testimonial__avatars">
-              <img src="src/image/review1.png" alt="User 1" className="testimonial__avatar" />
-              <img src="src/image/review2.png" alt="User 2" className="testimonial__avatar" />
-              <img src="src/image/review3.png" alt="User 3" className="testimonial__avatar" />
-              <img src="src/image/review1.png" alt="User 4" className="testimonial__avatar" />
-              <img src="src/image/review2.png" alt="User 5" className="testimonial__avatar" />
+              <img src="/images/review1.png" alt="User 1" className="testimonial__avatar" />
+              <img src="/images/review2.png" alt="User 2" className="testimonial__avatar" />
+              <img src="/images/review3.png" alt="User 3" className="testimonial__avatar" />
+              <img src="/images/review1.png" alt="User 4" className="testimonial__avatar" />
+              <img src="/images/review2.png" alt="User 5" className="testimonial__avatar" />
             </div>
             <div className="testimonial__review-count">
               2.7k Positive Reviews

@@ -35,7 +35,7 @@ const AboutSection = ({ showImage = true }: AboutSectionProps) => {
               </div> */}
             {/* </div> */}
           <img
-            src="src/image/about_left_img.png"
+            src="/images/about_left_img.png"
             alt="Team working"
             className="about-features-image"
           />
