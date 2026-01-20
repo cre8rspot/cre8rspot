@@ -4,4 +4,9 @@ import "./index.css";
 import "@fontsource/overlock";
 import "@fontsource/overlock/400.css";
 
-createRoot(document.getElementById("root")!).render(<App />);
+const rootElement = document.getElementById("root");
+if (!rootElement) {
+  throw new Error("Root element not found");
+}
+
+createRoot(rootElement).render(<App />);
