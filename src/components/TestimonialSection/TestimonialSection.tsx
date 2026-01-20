@@ -134,7 +134,7 @@ const TestimonialSection = () => {
         </div>
       </div>
 
-      <div className="testimonial-dots">
+      {/* <div className="testimonial-dots">
         {testimonials.map((_, index) => (
           <div
             key={index}
@@ -142,7 +142,7 @@ const TestimonialSection = () => {
             onClick={() => updateCarousel(index)}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

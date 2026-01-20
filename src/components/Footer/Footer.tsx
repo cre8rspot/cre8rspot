@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
             <p className="footer-brand-description">
               Cre8r Spot is a creative IT solutions that helps businesses grow through design and digital
-              services. We provide graphic design, UI/UX, video editing, and website development with a focus on
+              services. We provide graphic design, UX/UI, video editing, and website development with a focus on
               quality, clarity, and timely delivery.
             </p>
           </div>

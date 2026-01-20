@@ -40,7 +40,8 @@ const BrandSlider = () => {
   const duplicatedBrands = [...brands, ...brands];
 
   return (
-    <section className="brand-slider">
+    <div className='home-brand'>
+      <section className="brand-slider">
       <div className="brand-slider-header">
         <h2 className="brand-slider-title">Designing Success for Modern Brands</h2>
         <p className="brand-slider-description">
@@ -64,6 +65,8 @@ const BrandSlider = () => {
         </div>
       </div>
     </section>
+    </div>
+    
   );
 };
 

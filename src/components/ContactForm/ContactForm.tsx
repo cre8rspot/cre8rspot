@@ -182,7 +182,7 @@ const ContactForm = () => {
           <div className="contact-form-field">
             <input
               type="text"
-              placeholder="First Name *"
+              placeholder="Your Name *"
               className={`contact-form-input ${errors.firstName ? 'error' : ''}`}
               value={formData.firstName}
               onChange={(e) => handleInputChange('firstName', e.target.value)}

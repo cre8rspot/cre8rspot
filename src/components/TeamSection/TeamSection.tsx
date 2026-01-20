@@ -128,7 +128,7 @@ const TeamSection = () => {
         </button>
       </div>
 
-      <div className="dots">
+      {/* <div className="dots">
         {teamMembers.map((_, index) => (
           <div
             key={index}
@@ -136,7 +136,7 @@ const TeamSection = () => {
             onClick={() => updateCarousel(index)}
           />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

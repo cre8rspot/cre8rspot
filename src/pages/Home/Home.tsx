@@ -14,35 +14,35 @@ const services = [
     icon: <Palette size={20} />,
     title: 'Graphic Designing',
     description:
-      "We create visually stunning designs that reflect your brand's secrets. Our graphics help you communicate clearly, creatively, and effectively.",
+      "We create visually impactful designs that bring your brand identity to life. Every design is crafted to communicate your message clearly while maintaining creativity and consistency. Our graphics help build recognition, trust, and a strong visual presence across all platforms.",
     link: '/service/graphic-designing',
   },
   {
     icon: <Layout size={20} />,
     title: 'UX / UI Designing',
     description:
-      'We create simple, smooth, and meaningful digital experiences. Our UI designs help users navigate easily and connect with your brand.',
+      'We design intuitive and user-friendly digital experiences that feel smooth and meaningful. Our UX/UI approach focuses on usability, visual clarity, and user behavior. This ensures effortless navigation and stronger engagement with your product or brand.',
     link: '/service/ux-ui-designing',
   },
   {
     icon: <Video size={20} />,
     title: 'Video Editing',
     description:
-      'We turn raw footage into dynamic, eye-catching videos that connect with your audience. Every frame is edited with creativity, clarity, and purpose.',
+      'We turn raw footage into visually engaging and professional-quality videos. Each frame is edited with precision, creativity, and storytelling in mind. Our videos are designed to capture attention and connect emotionally with your audience.',
     link: '/service/video-editing',
   },
   {
     icon: <Code size={20} />,
     title: 'Web Development',
     description:
-      'We build fast, responsive, & modern websites tailored to your business needs. Our development ensures smooth performance and a seamless user experience.',
+      'We build fast, responsive, and modern websites tailored to your business needs. Our development process focuses on performance, scalability, and clean design. The result is a seamless and reliable user experience across all devices.',
     link: '/service/web-development',
   },
   {
     icon: <Camera size={20} />,
     title: 'Product Ads Shooting',
     description:
-      'We craft striking product ads that showcase every detail, delivering professional quality and engaging visuals.',
+      'We produce high-quality product ad shoots that highlight every detail with precision. Our visuals are carefully styled to reflect brand value and professionalism. Each shoot is designed to attract attention and drive customer interest.',
     link: '/service/product-ads-shooting',
   },
 ];

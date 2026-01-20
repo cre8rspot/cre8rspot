@@ -103,4 +103,13 @@
   .about-section-features {
     grid-template-columns: 1fr;
   }
+  .about-section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 426px) {
+  .about-section-title {
+    font-size: 28px;
+  }
+  
 }

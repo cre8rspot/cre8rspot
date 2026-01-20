@@ -12,8 +12,8 @@ interface ServiceCardProps {
 const ServiceCard = ({ icon, title, description, link = '/service/graphic-designing' }: ServiceCardProps) => {
   return (
     <div className="service-card">
-      <div className="service-card-icon">{icon}</div>
       <div className="service-card-border">
+        <div className="service-card-icon">{icon}</div>
         <div className="service-card-main">
           <h3 className="service-card-title">{title}</h3>
           <p className="service-card-description">

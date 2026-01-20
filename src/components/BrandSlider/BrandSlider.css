@@ -152,6 +152,12 @@
     min-width: 160px;
     padding: 1.25rem 2.5rem;
   }
+  .home-brand{
+    padding: 2rem;
+  }
+  .brand-slider-description {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -253,5 +259,10 @@
 
   .brand-slider-item:hover .brand-slider-logo {
     opacity: 1;
+  }
+}
+@media (max-width: 426px){
+  .home-brand{
+    padding: 1rem;
   }
 }
