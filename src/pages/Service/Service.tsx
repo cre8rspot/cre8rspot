@@ -5,6 +5,7 @@ import PageBanner from '../../components/PageBanner/PageBanner';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
+import { useScrollAnimations } from '../../hooks/useScrollAnimations';
 import './Service.css';
 
 const services = [
@@ -46,6 +47,9 @@ const services = [
 ];
 
 const Service = () => {
+  // Initialize scroll animations for this page
+  useScrollAnimations();
+
   return (
     <div className="service-page">
       <Header />
@@ -61,6 +65,7 @@ const Service = () => {
               title={service.title}
               description={service.description}
               link={service.link}
+              animationDelay={`delay-${(index % 3 + 1) * 100}`}
             />
           ))}
         </div>

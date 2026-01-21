@@ -23,7 +23,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-grid">
-          <div className="footer-brand">
+          <div className="footer-brand box fade-up">
             <div className="footer-brand-logo">
               <span className="footer-brand-logo-icon">
                 <img src='/images/logo.png'/>
@@ -36,7 +36,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="footer-column">
+          <div className="footer-column box fade-up delay-100">
             <h4 className="footer-column-title">Quick Links</h4>
             <div className="footer-links">
               {quickLinks.map((link) => (
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-column">
+          <div className="footer-column box fade-up delay-200">
             <h4 className="footer-column-title">Services</h4>
             <div className="footer-links">
               {services.map((service, index) => (
@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-column">
+          <div className="footer-column box fade-up delay-300">
             <h4 className="footer-column-title">Contact</h4>
             <div className="footer-contact-item">
               <Mail size={18} className="footer-contact-icon" />
@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">
+        <div className="footer-bottom box fade-up delay-400">
           <p className="footer-copyright">@Copyright 2025, cre8rspot - Services & Products</p>
         </div>
       </div>

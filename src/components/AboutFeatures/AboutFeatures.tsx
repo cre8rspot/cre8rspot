@@ -27,17 +27,7 @@ const AboutFeatures = () => {
   return (
     <section className="about-features">
       <div className="about-features-grid">
-        <div className="about-features-image-container">
-          {/* <div className="about-features-badge"> */}
-            {/* <div className="about-features-badge-number">5</div> */}
-            {/* <div className="about-features-badge-text">
-              Delivering Quality
-              <br />
-              Digital Services
-              <br />
-              for Years
-            </div> */}
-          {/* </div> */}
+        <div className="about-features-image-container box fade-left">
           <img
             src="/images/about_left_img.png"
             alt="Team working"
@@ -46,11 +36,11 @@ const AboutFeatures = () => {
         </div>
 
         <div className="about-features-content">
-          <p className="about-features-label">About Us</p>
-          <h2 className="about-features-title">Who We Are & What We Do</h2>
+          <p className="about-features-label box fade-up">About Us</p>
+          <h2 className="about-features-title box fade-up delay-100">Who We Are & What We Do</h2>
           <div className="about-features-list">
             {features.map((feature, index) => (
-              <div key={index} className="about-features-item">
+              <div key={index} className={`about-features-item box fade-up delay-${(index + 2) * 100}`}>
                 <div className="about-features-item-icon">
                   <img 
                     src={feature.iconImage} 

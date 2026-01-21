@@ -1,0 +1,183 @@
+/* Scroll Animation System - Base Styles */
+
+/* Prevent horizontal overflow */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Base animation class - elements start hidden */
+.scroll-animate {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: opacity, transform;
+}
+
+/* When element is animated into view */
+.scroll-animate.animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* Animation Types */
+
+/* Fade Up - Elements slide up from bottom */
+.fade-up {
+  transform: translate3d(0, 60px, 0);
+}
+
+.fade-up.animate {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Fade Down - Elements slide down from top */
+.fade-down {
+  transform: translate3d(0, -60px, 0);
+}
+
+.fade-down.animate {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Fade Left - Elements slide in from left */
+.fade-left {
+  transform: translate3d(-60px, 0, 0);
+}
+
+.fade-left.animate {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Fade Right - Elements slide in from right */
+.fade-right {
+  transform: translate3d(60px, 0, 0);
+}
+
+.fade-right.animate {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Zoom In - Elements scale up from small */
+.zoom-in {
+  transform: scale(0.8);
+}
+
+.zoom-in.animate {
+  transform: scale(1);
+}
+
+/* Zoom Out - Elements scale down from large */
+.zoom-out {
+  transform: scale(1.2);
+}
+
+.zoom-out.animate {
+  transform: scale(1);
+}
+
+/* Fade In - Simple opacity fade */
+.fade-in {
+  transform: none;
+}
+
+.fade-in.animate {
+  opacity: 1;
+}
+
+/* Advanced Animation Types */
+
+/* Slide Up Large - Bigger movement for hero sections */
+.slide-up-large {
+  transform: translate3d(0, 100px, 0);
+}
+
+.slide-up-large.animate {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Rotate In - Subtle rotation with fade */
+.rotate-in {
+  transform: rotate(-5deg) scale(0.9);
+}
+
+.rotate-in.animate {
+  transform: rotate(0deg) scale(1);
+}
+
+/* Stagger Animation Support */
+.scroll-animate.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.scroll-animate.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.scroll-animate.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.scroll-animate.delay-400 {
+  transition-delay: 0.4s;
+}
+
+.scroll-animate.delay-500 {
+  transition-delay: 0.5s;
+}
+
+/* Duration Variations */
+.scroll-animate.duration-fast {
+  transition-duration: 0.5s;
+}
+
+.scroll-animate.duration-slow {
+  transition-duration: 1.2s;
+}
+
+/* Easing Variations */
+.scroll-animate.ease-bounce {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.scroll-animate.ease-smooth {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animate {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+  }
+  
+  .scroll-animate:not(.animate) {
+    transform: none !important;
+  }
+}
+
+/* Performance Optimizations */
+.scroll-animate {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Container for preventing overflow issues */
+.scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Utility classes for common patterns */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

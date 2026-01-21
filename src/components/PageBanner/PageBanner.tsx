@@ -9,8 +9,8 @@ interface PageBannerProps {
 const PageBanner = ({ title, breadcrumb }: PageBannerProps) => {
   return (
     <div className="page-banner">
-      <h1 className="page-banner-title">{title}</h1>
-      <div className="page-banner-breadcrumb">
+      <h1 className="page-banner-title box fade-up">{title}</h1>
+      <div className="page-banner-breadcrumb box fade-up delay-200">
         <Link to="/" className="page-banner-breadcrumb-item">
           Home
         </Link>

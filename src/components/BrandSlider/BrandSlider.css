@@ -58,7 +58,7 @@
   z-index: 1;
   overflow: hidden;
   width: 100%;
-  --marquee-speed: 30s;
+  --marquee-speed: 70s;
   --marquee-direction: normal;
 }
 

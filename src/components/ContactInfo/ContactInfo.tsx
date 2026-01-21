@@ -4,13 +4,13 @@ import './ContactInfo.css';
 const ContactInfo = () => {
   return (
     <div className="contact-info">
-      <h2 className="contact-info-title">Let's Build Something Powerful Together</h2>
-      <p className="contact-info-description">
+      <h2 className="contact-info-title box fade-up">Let's Build Something Powerful Together</h2>
+      <p className="contact-info-description box fade-up delay-100">
         Tell us about your ideas, goals, or project requirements. Our team is ready to help you create smart and
         impactful digital solutions.
       </p>
 
-      <div className="contact-info-item">
+      <div className="contact-info-item box fade-up delay-200">
         <div className="contact-info-icon">
           <Mail size={20} />
         </div>
@@ -20,7 +20,7 @@ const ContactInfo = () => {
         </div>
       </div>
 
-      <div className="contact-info-item">
+      <div className="contact-info-item box fade-up delay-300">
         <div className="contact-info-icon">
           <Phone size={20} />
         </div>

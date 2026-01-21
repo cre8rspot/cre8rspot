@@ -84,11 +84,11 @@ const TeamSection = () => {
   return (
     <section className="team-section">
       <div className="team-section-header">
-        <p className="team-section-label">Our Team</p>
-        <h2 className="team-section-title">The Minds Behind Our Creative Work</h2>
+        <p className="team-section-label box fade-up">Our Team</p>
+        <h2 className="team-section-title box fade-up delay-100">The Minds Behind Our Creative Work</h2>
       </div>
 
-      <div className="carousel-container">
+      <div className="carousel-container box fade-up delay-200">
         <button className="nav-arrow left" onClick={handlePrevious}>
           ‹
         </button>

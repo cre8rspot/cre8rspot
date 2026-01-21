@@ -7,11 +7,18 @@ interface ServiceCardProps {
   title: string;
   description: string;
   link?: string;
+  animationDelay?: string;
 }
 
-const ServiceCard = ({ icon, title, description, link = '/service/graphic-designing' }: ServiceCardProps) => {
+const ServiceCard = ({ 
+  icon, 
+  title, 
+  description, 
+  link = '/service/graphic-designing',
+  animationDelay = ''
+}: ServiceCardProps) => {
   return (
-    <div className="service-card">
+    <div className={`service-card box zoom-in ${animationDelay}`}>
       <div className="service-card-border">
         <div className="service-card-icon">{icon}</div>
         <div className="service-card-main">

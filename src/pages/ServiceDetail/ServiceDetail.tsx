@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import PageBanner from '../../components/PageBanner/PageBanner';
 import ServiceInclusion from '../../components/ServiceInclusion/ServiceInclusion';
+import { useScrollAnimations } from '../../hooks/useScrollAnimations';
 import './ServiceDetail.css';
 
 const sidebarItems = [
@@ -217,6 +218,8 @@ const ServiceDetail = () => {
   const currentSlug = slug || 'graphic-designing';
   const service = serviceData[currentSlug] || serviceData['graphic-designing']; // Use dynamic service data
 
+  // Initialize scroll animations for this page - reset when slug changes
+  useScrollAnimations({ dependencies: [currentSlug] });
   
   return (
     <div className="service-detail-page">
@@ -225,7 +228,7 @@ const ServiceDetail = () => {
 
       <section className="service-detail-content">
         <div className="service-detail-layout">
-          <aside className="service-detail-sidebar">
+          <aside className="service-detail-sidebar box fade-left">
             <h3 className="service-detail-sidebar-title">Other Services</h3>
             <div className="service-detail-sidebar-list">
               {sidebarItems.map((item) => (
@@ -243,23 +246,24 @@ const ServiceDetail = () => {
           </aside>
 
           <main className="service-detail-main">
-            <div className="service-detail-hero">
+            <div className="service-detail-hero box fade-right delay-200">
               <div className="service-detail-hero-overlay">
                 <h2 className="service-detail-overview-title">Service Overview</h2>
                 <p className="service-detail-overview-text">{service.overview}</p>
               </div>
             </div>
 
-            <div className="service-detail-inclusions">
+            <div className="service-detail-inclusions box fade-up delay-300">
               <h2 className="service-detail-inclusions-title">Service Inclusions</h2>
               <div className="service-detail-inclusions-grid">
                 {service.inclusions.map((inclusion, index) => (
-                  <ServiceInclusion
-                    key={index}
-                    icon={inclusion.icon}
-                    title={inclusion.title}
-                    description={inclusion.description}
-                  />
+                  <div key={index} className={`box zoom-in delay-${400 + (index * 100)}`}>
+                    <ServiceInclusion
+                      icon={inclusion.icon}
+                      title={inclusion.title}
+                      description={inclusion.description}
+                    />
+                  </div>
                 ))}
               </div>
             </div>

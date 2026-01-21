@@ -1,0 +1,116 @@
+.scroll-demo {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scroll-demo-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.scroll-demo-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  margin-bottom: 1rem;
+  font-family: "Overlock", sans-serif;
+}
+
+.scroll-demo-section h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 2rem;
+  font-family: "Overlock", sans-serif;
+}
+
+.scroll-demo-section p {
+  font-size: 1.1rem;
+  color: hsl(var(--muted-foreground));
+  font-family: "Overpass", sans-serif;
+}
+
+.scroll-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.demo-card {
+  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--muted) / 0.1) 100%);
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.demo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.demo-card h3,
+.demo-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin-bottom: 1rem;
+  font-family: "Overlock", sans-serif;
+}
+
+.demo-card p {
+  color: hsl(var(--muted-foreground));
+  font-family: "Overpass", sans-serif;
+  line-height: 1.6;
+}
+
+.stagger-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.css-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scroll-demo {
+    padding: 2rem 1rem;
+  }
+  
+  .scroll-demo-section h2 {
+    font-size: 2rem;
+  }
+  
+  .scroll-demo-section h3 {
+    font-size: 1.5rem;
+  }
+  
+  .scroll-demo-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .stagger-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .css-examples {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .demo-card {
+    padding: 1.5rem;
+  }
+}

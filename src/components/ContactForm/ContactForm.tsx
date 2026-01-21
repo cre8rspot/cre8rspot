@@ -176,8 +176,8 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-      <h3 className="contact-form-title">Ready to Build Something Exceptional?</h3>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <h3 className="contact-form-title box fade-up">Ready to Build Something Exceptional?</h3>
+      <form className="contact-form box fade-up delay-100" onSubmit={handleSubmit}>
         <div className="contact-form-row">
           <div className="contact-form-field">
             <input

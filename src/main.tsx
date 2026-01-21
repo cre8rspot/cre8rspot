@@ -18,6 +18,8 @@ import App from "./App";
 import "./index.css";
 import "@fontsource/overlock";
 import "@fontsource/overlock/400.css";
+// Import global animations
+import "./styles/animations.css";
 
 const rootElement = document.getElementById("root");
 

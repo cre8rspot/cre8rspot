@@ -1,0 +1,109 @@
+/* Global Scroll Animation System */
+
+/* Base animation class - elements start hidden */
+.box {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, opacity;
+}
+
+/* Trigger class - elements become visible */
+.animate {
+  opacity: 1;
+  transform: none;
+}
+
+/* Animation Effects */
+
+/* Fade Up - slides from bottom */
+.fade-up {
+  transform: translateY(60px);
+}
+
+.fade-up.animate {
+  transform: translateY(0);
+}
+
+/* Fade Left - slides from right */
+.fade-left {
+  transform: translateX(80px);
+}
+
+.fade-left.animate {
+  transform: translateX(0);
+}
+
+/* Fade Right - slides from left */
+.fade-right {
+  transform: translateX(-80px);
+}
+
+.fade-right.animate {
+  transform: translateX(0);
+}
+
+/* Zoom In - scales from smaller */
+.zoom-in {
+  transform: scale(0.8);
+}
+
+.zoom-in.animate {
+  transform: scale(1);
+}
+
+/* Zoom Out - scales from larger */
+.zoom-out {
+  transform: scale(1.2);
+}
+
+.zoom-out.animate {
+  transform: scale(1);
+}
+
+/* Delay variations for staggered animations */
+.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.delay-400 {
+  transition-delay: 0.4s;
+}
+
+.delay-500 {
+  transition-delay: 0.5s;
+}
+
+/* Duration variations */
+.duration-fast {
+  transition-duration: 0.5s;
+}
+
+.duration-slow {
+  transition-duration: 1.2s;
+}
+
+/* Prevent horizontal overflow */
+html {
+  overflow-x: hidden;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .box {
+    transition-duration: 0.01ms;
+    transform: none !important;
+  }
+  
+  .box.animate {
+    opacity: 1;
+  }
+}

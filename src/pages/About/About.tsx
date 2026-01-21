@@ -4,9 +4,13 @@ import PageBanner from '../../components/PageBanner/PageBanner';
 import AboutSection from '../../components/AboutSection/AboutSection';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
+import { useScrollAnimations } from '../../hooks/useScrollAnimations';
 import './About.css';
 
 const About = () => {
+  // Initialize scroll animations for this page
+  useScrollAnimations();
+
   return (
     <div className="about-page">
       <Header />

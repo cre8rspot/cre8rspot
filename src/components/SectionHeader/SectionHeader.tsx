@@ -8,8 +8,8 @@ interface SectionHeaderProps {
 const SectionHeader = ({ label, title }: SectionHeaderProps) => {
   return (
     <div className="section-header">
-      <p className="section-header-label">{label}</p>
-      <h2 className="section-header-title">{title}</h2>
+      <p className="section-header-label box fade-up">{label}</p>
+      <h2 className="section-header-title box fade-up delay-100">{title}</h2>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import AboutFeatures from '../../components/AboutFeatures/AboutFeatures';
 import SectionHeader from '../../components/SectionHeader/SectionHeader';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
 import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
+import { useScrollAnimations } from '../../hooks/useScrollAnimations';
 import './Home.css';
 
 const services = [
@@ -48,6 +49,9 @@ const services = [
 ];
 
 const Home = () => {
+  // Initialize scroll animations for this page
+  useScrollAnimations();
+
   return (
     <div className="home-page">
       <Header />
@@ -65,6 +69,7 @@ const Home = () => {
               title={service.title}
               description={service.description}
               link={service.link}
+              animationDelay={`delay-${(index % 3 + 1) * 100}`}
             />
           ))}
         </div>

@@ -63,13 +63,13 @@ const TestimonialSection = () => {
     <section className="testimonial-section">
       <div className="testimonial">
         <div className="testimonial__header">
-          <h4 className="testimonial__label">Our Client Says</h4>
-          <h1 className="testimonial__heading">
+          <h4 className="testimonial__label box fade-up">Our Client Says</h4>
+          <h1 className="testimonial__heading box fade-up delay-100">
             Turning products into visual stories
           </h1>
         </div>
 
-        <div className="testimonial__stats">
+        <div className="testimonial__stats box fade-left delay-200">
           <div className="testimonial__stats-top">
             <div className="testimonial__stat">
               <h1 className="testimonial__stat-number">85%</h1>
@@ -96,7 +96,7 @@ const TestimonialSection = () => {
         </div>
       </div>
 
-      <div className="testimonial-carousel-container">
+      <div className="testimonial-carousel-container box fade-right delay-300">
         <div className="testimonial-carousel">
           <div className="testimonial-carousel__img-container">
             <img 
