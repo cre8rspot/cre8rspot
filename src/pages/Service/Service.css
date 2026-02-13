@@ -1,28 +1,95 @@
 .service-page {
-  min-height: 100vh;
   background: hsl(var(--background));
+  padding-bottom: 2rem;
 }
 
 .service-content {
   padding: 4rem 2rem;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 40px;
+  justify-items: center;
 }
 
-@media (max-width: 1024px) {
+/* Desktop: 3 cards per row */
+@media (max-width: 1200px) {
+  .service-content {
+    padding: 3.5rem 2rem;
+  }
+  
   .service-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
   }
 }
 
+/* Tablet: 2 cards per row (844px-1024px) */
+@media (max-width: 1024px) and (min-width: 844px) {
+  .service-content {
+    padding: 3rem 1.5rem;
+  }
+  
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet: 2 cards per row (769px-843px) - Taller cards */
+@media (max-width: 843px) and (min-width: 769px) {
+  .service-content {
+    padding: 3rem 1.5rem;
+  }
+  
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Small Tablet: 2 cards per row */
+@media (max-width: 768px) {
+  .service-content {
+    padding: 2.5rem 1rem;
+  }
+  
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile: 1 card per row */
 @media (max-width: 640px) {
+  .service-content {
+    padding: 2rem 1rem;
+  }
+  
   .service-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-content {
+    padding: 2rem 0.5rem;
+  }
+  
+  .service-grid {
+    gap: 20px;
+    max-width: 350px;
   }
 }

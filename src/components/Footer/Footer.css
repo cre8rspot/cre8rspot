@@ -123,13 +123,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+    .footer {
+    padding: 2rem 1rem 0.5rem 1rem;
+}
 }
 
 @media (max-width: 480px) {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-  .footer {
-    padding: 2rem 1rem 0.5rem 1rem;
-}
+
 }

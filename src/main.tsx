@@ -20,6 +20,8 @@ import "@fontsource/overlock";
 import "@fontsource/overlock/400.css";
 // Import global animations
 import "./styles/animations.css";
+// Import responsive typography
+import "./styles/typography-responsive.css";
 
 const rootElement = document.getElementById("root");
 

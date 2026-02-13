@@ -129,15 +129,51 @@
     margin: 16px 0px 18px 80px;
   }
   
-  /* .service-card-description {
-    font-size: 13px;
-    line-height: 22px;
-    margin-bottom: 1.3rem;
-  } */
-  
   .service-card-btn {
     font-size: 0.75rem;
     padding: 0.65rem 1.6rem;
+  }
+}
+
+/* Fix for 843px-769px breakpoint - Much wider cards with 2 per row */
+@media (max-width: 843px) and (min-width: 769px) {
+  .service-card-border {
+    max-width: 450px;
+    height: 350px;
+  }
+  
+  .service-card-border::before {
+    clip-path: path("M 90 0 L 420 0 Q 450 0 450 30 L 450 320 Q 450 350 420 350 L 30 350 Q 0 350 0 320 L 0 224 Q 0 200 0 92 Q 0 80 24 80 L 66 80 Q 90 80 90 62 L 90 30 Q 90 0 120 0 Z");
+  }
+  
+  .service-card-main {
+    clip-path: path("M 90 0 L 420 0 Q 450 0 450 30 L 450 320 Q 450 350 420 350 L 30 350 Q 0 350 0 320 L 0 224 Q 0 200 0 92 Q 0 80 24 80 L 66 80 Q 90 80 90 62 L 90 30 Q 90 0 120 0 Z");
+    padding: 20px;
+  }
+  
+  .service-card-icon {
+    height: 64px;
+    width: 72px;
+  }
+  
+  .service-card-title {
+    font-size: 22px;
+    margin: 16px 0px 20px 90px;
+  }
+  
+  .service-card-description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  
+  .service-card-btn {
+    font-size: 0.85rem;
+    padding: 0.75rem 1.9rem;
+  }
+  
+  .service-card-btn-icon {
+    width: 2.6rem;
+    height: 2.6rem;
   }
 }
 

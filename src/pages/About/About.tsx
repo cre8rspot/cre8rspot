@@ -4,6 +4,7 @@ import PageBanner from '../../components/PageBanner/PageBanner';
 import AboutSection from '../../components/AboutSection/AboutSection';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
+import TestimonialCarousel from "../../components/TestimonialCarousel/TestimonialCarousel";
 import { useScrollAnimations } from '../../hooks/useScrollAnimations';
 import './About.css';
 
@@ -18,6 +19,7 @@ const About = () => {
       <AboutSection />
       <TeamSection />
       <TestimonialSection />
+       <TestimonialCarousel />
       <Footer />
     </div>
   );

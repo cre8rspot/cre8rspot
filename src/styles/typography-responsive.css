@@ -1,0 +1,306 @@
+/* 
+ * Global Responsive Typography
+ * Desktop (≥1024px): NO CHANGES - keeps existing sizes
+ * Tablet (768px-1023px): Optimized for medium screens
+ * Mobile (≤767px): Optimized for small screens
+ */
+
+/* ============================================
+   TABLET TYPOGRAPHY (768px - 1023px)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Headings */
+  h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2rem) !important;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 1.75rem) !important;
+  }
+
+  h4 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem) !important;
+  }
+
+  h5 {
+    font-size: clamp(1.1rem, 2vw, 1.25rem) !important;
+  }
+
+  h6 {
+    font-size: clamp(1rem, 1.5vw, 1.1rem) !important;
+  }
+
+  /* Body text */
+  p {
+    font-size: clamp(0.95rem, 1.8vw, 1rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Buttons */
+  button,
+  .btn,
+  a.button {
+    font-size: clamp(0.9rem, 1.8vw, 1rem) !important;
+    padding: 0.7rem 1.5rem !important;
+  }
+
+  /* Labels and small text */
+  label,
+  small,
+  .small-text {
+    font-size: clamp(0.85rem, 1.5vw, 0.9rem) !important;
+  }
+
+  /* Navigation */
+  nav a,
+  .nav-link {
+    font-size: clamp(0.9rem, 1.8vw, 1rem) !important;
+  }
+
+  /* Card titles */
+  .card-title,
+  .service-card h3,
+  .testimonial-card-name {
+    font-size: clamp(1.1rem, 2.2vw, 1.3rem) !important;
+  }
+
+  /* Card descriptions */
+  .card-description,
+  .service-card p,
+  .testimonial-card-text {
+    font-size: clamp(0.9rem, 1.8vw, 1rem) !important;
+  }
+}
+
+/* ============================================
+   MOBILE TYPOGRAPHY (≤767px)
+   ============================================ */
+@media (max-width: 767px) {
+  /* Headings */
+  h1 {
+    font-size: clamp(1.75rem, 5vw, 2.25rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 4.5vw, 1.875rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 4vw, 1.5rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  h4 {
+    font-size: clamp(1.1rem, 3.5vw, 1.25rem) !important;
+    line-height: 1.4 !important;
+  }
+
+  h5 {
+    font-size: clamp(1rem, 3vw, 1.1rem) !important;
+    line-height: 1.4 !important;
+  }
+
+  h6 {
+    font-size: clamp(0.95rem, 2.5vw, 1rem) !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Body text */
+  p {
+    font-size: clamp(0.875rem, 2.5vw, 0.95rem) !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Buttons */
+  button,
+  .btn,
+  a.button {
+    font-size: clamp(0.875rem, 2.5vw, 0.95rem) !important;
+    padding: 0.65rem 1.25rem !important;
+  }
+
+  /* Labels and small text */
+  label,
+  small,
+  .small-text {
+    font-size: clamp(0.8rem, 2vw, 0.875rem) !important;
+  }
+
+  /* Navigation */
+  nav a,
+  .nav-link {
+    font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
+  }
+
+  /* Card titles */
+  .card-title,
+  .service-card h3,
+  .testimonial-card-name {
+    font-size: clamp(1rem, 3vw, 1.15rem) !important;
+  }
+
+  /* Card descriptions */
+  .card-description,
+  .service-card p,
+  .testimonial-card-text {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem) !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* ============================================
+   EXTRA SMALL MOBILE (≤480px)
+   ============================================ */
+@media (max-width: 480px) {
+  h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(1.35rem, 5vw, 1.75rem) !important;
+  }
+
+  h3 {
+    font-size: clamp(1.15rem, 4.5vw, 1.4rem) !important;
+  }
+
+  h4 {
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
+  }
+
+  p {
+    font-size: clamp(0.85rem, 3vw, 0.9rem) !important;
+  }
+
+  button,
+  .btn,
+  a.button {
+    font-size: clamp(0.85rem, 3vw, 0.9rem) !important;
+    padding: 0.6rem 1rem !important;
+  }
+}
+
+/* ============================================
+   COMPONENT-SPECIFIC OVERRIDES
+   ============================================ */
+
+/* Hero Section */
+@media (max-width: 1023px) {
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3rem) !important;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.25rem) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem) !important;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.9rem, 3vw, 1.1rem) !important;
+  }
+}
+
+/* Section Headers */
+@media (max-width: 1023px) {
+  .section-label {
+    font-size: clamp(0.95rem, 2vw, 1.1rem) !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 4vw, 2.25rem) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-label {
+    font-size: clamp(0.85rem, 2.5vw, 1rem) !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 5vw, 2rem) !important;
+  }
+}
+
+/* Footer */
+@media (max-width: 1023px) {
+  .footer-title {
+    font-size: clamp(1rem, 2.2vw, 1.2rem) !important;
+  }
+
+  .footer-text,
+  .footer-link {
+    font-size: clamp(0.9rem, 1.8vw, 1rem) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-title {
+    font-size: clamp(0.95rem, 3vw, 1.1rem) !important;
+  }
+
+  .footer-text,
+  .footer-link {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem) !important;
+  }
+}
+
+/* Service Cards */
+@media (max-width: 1023px) {
+  .service-card-title {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem) !important;
+  }
+
+  .service-card-description {
+    font-size: clamp(0.9rem, 2vw, 1rem) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-card-title {
+    font-size: clamp(1rem, 3.5vw, 1.2rem) !important;
+  }
+
+  .service-card-description {
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem) !important;
+  }
+}
+
+/* Testimonials */
+@media (max-width: 1023px) {
+  .testimonial-name {
+    font-size: clamp(1rem, 2.2vw, 1.15rem) !important;
+  }
+
+  .testimonial-position {
+    font-size: clamp(0.85rem, 1.8vw, 0.95rem) !important;
+  }
+
+  .testimonial-text {
+    font-size: clamp(0.9rem, 2vw, 1rem) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-name {
+    font-size: clamp(0.95rem, 3vw, 1.05rem) !important;
+  }
+
+  .testimonial-position {
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem) !important;
+  }
+
+  .testimonial-text {
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem) !important;
+  }
+}

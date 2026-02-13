@@ -1,18 +1,11 @@
-import { ArrowUpRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import './HeroSection.css';
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-container">
-        <div className="hero-image-container box fade-right">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
-            alt="Digital design showcase"
-            className="hero-image"
-          />
-        </div>
         <div className="hero-content">
           <h1 className="hero-title box fade-up">
             Transform Your Ideas Into Stunning Digital Experiences
@@ -31,6 +24,13 @@ const HeroSection = () => {
               <ArrowUpRight size={18} />
             </Link>
           </div>
+        </div>
+        <div className="hero-image-container box fade-left">
+          <img
+            src="src/image/3d_robot4.png"
+            alt="Digital design showcase"
+            className="hero-image"
+          />
         </div>
       </div>
     </section>

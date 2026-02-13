@@ -153,10 +153,14 @@
     padding: 1.25rem 2.5rem;
   }
   .home-brand{
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+  .brand-slider-title {
+    font-size: 40px;
   }
   .brand-slider-description {
     max-width: 400px;
+    font-size: 16px;
   }
 }
 

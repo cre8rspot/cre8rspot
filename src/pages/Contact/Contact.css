@@ -1,6 +1,6 @@
 .contact-page {
-  min-height: 100vh;
   background: hsl(var(--background));
+  padding-bottom: 2rem;
 }
 
 .contact-content {
@@ -19,5 +19,8 @@
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+  .contact-content {
+    padding: 4rem 1rem;
   }
 }

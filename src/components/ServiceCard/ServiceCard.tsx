@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 import './ServiceCard.css';
 
 interface ServiceCardProps {
-  icon: React.ReactNode;
+  icon: string; // Changed from React.ReactNode to string for image path
   title: string;
   description: string;
   link?: string;
@@ -20,7 +20,9 @@ const ServiceCard = ({
   return (
     <div className={`service-card box zoom-in ${animationDelay}`}>
       <div className="service-card-border">
-        <div className="service-card-icon">{icon}</div>
+        <div className="service-card-icon">
+          <img src={icon} alt={`${title} icon`} className="service-card-icon-image" />
+        </div>
         <div className="service-card-main">
           <h3 className="service-card-title">{title}</h3>
           <p className="service-card-description">
