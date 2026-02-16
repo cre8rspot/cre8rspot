@@ -19,7 +19,6 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <Seowrapper />
       <BrowserRouter
         future={{
           v7_startTransition: true,
@@ -27,6 +26,8 @@ const App = () => (
         }}
       >
         <ScrollToTop />
+              <Seowrapper />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
