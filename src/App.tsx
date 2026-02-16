@@ -10,6 +10,7 @@ import Service from "./pages/Service/Service";
 import ServiceDetail from "./pages/ServiceDetail/ServiceDetail";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound";
+import Seowrapper from "./components/Seowrapper"
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <Seowrapper />
       <BrowserRouter
         future={{
           v7_startTransition: true,
